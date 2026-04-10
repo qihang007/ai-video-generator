@@ -105,6 +105,31 @@ auto-video-maker/
 └── index.html            # Web 界面
 ```
 
+## 授权激活
+
+本项目需要激活后才能使用。
+
+### 激活方式
+
+1. 进入「会员中心」页面
+2. 输入下方任意一个试用码
+3. 点击激活
+
+### 试用码（每个可用 5 天）
+
+```
+TRIALAA1E0388
+TRIAL6EBBFB7E
+TRIAL1CC33F05
+TRIAL0C0D7C7D
+TRIALC2D08129
+TRIAL4E34FA7F
+TRIAL9A0C59AF
+TRIAL0DEFDCAA
+```
+
+> 注意：试用码为共享资源，如果无法激活可能已被使用完。可联系作者获取更多试用码。
+
 ## License
 
 MIT License
