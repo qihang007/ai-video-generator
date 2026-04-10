@@ -74,7 +74,25 @@ python main.py --script "你的视频文案"
 
 ## 界面预览
 
-> 截图位置
+### 云端模式
+
+![云端模式](product_img/云端模式.png)
+
+### 本地模式 - 素材处理
+
+![素材处理](product_img/素材处理.png)
+
+### 本地模式 - 语义搜索测试
+
+![语义搜索测试](product_img/语义搜索测试.png)
+
+### 会员中心
+
+![会员中心](product_img/会员中心.png)
+
+### 交流群
+
+![交流群](product_img/群二维码.png)
 
 ## API Keys 申请
 
