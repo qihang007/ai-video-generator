@@ -1,25 +1,26 @@
-
 # 视频素材 API
 requests>=2.28.0
 pexels-python>=5.0.0
 pixabay>=1.2.0
 
-
+# Web 服务
+fastapi>=0.100.0
+uvicorn>=0.23.0
 websockets>=10.0.0
 
 # 视频处理
 opencv-python>=4.7.0
 numpy>=1.24.0
 pymediainfo>=6.1.0
+scenedetect>=3.6.0
 
 # AI 模型
 torch>=2.0.0
-
-# 云端授权
-supabase>=2.0.0
-python-dotenv>=1.0.0
+cn-clip>=1.0.0
+chromadb>=0.4.0
 
 # 工具库
 tqdm>=4.65.0
 python-dateutil>=2.8.0
 jieba>=0.42.1
+uiautomation>=2.0.0
