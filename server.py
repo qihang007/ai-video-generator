@@ -29,7 +29,7 @@ from auto_video.tts_generator import TTSGenerator, AudioSegment
 from auto_video.video_searcher import VideoSearcher, VideoAsset
 from auto_video.asr_generator import SubtitleGenerator, ASRGenerator
 from auto_video.jianying_maker import JianYingMaker
-from auto_video.license_manager import check_local_license, activate_license, get_machine_id, get_child_codes, generate_invite_codes, load_state
+from auto_video.license_manager_feishu import check_local_license, activate_license, get_machine_id, get_child_codes, generate_invite_codes, load_state
 from auto_video.local_clip_matcher import (
     get_chromadb_status, get_vectorization_stats, search_materials,
     generate_local_script, calculate_audio_times, run_vectorization
@@ -969,9 +969,14 @@ async def activate(req: LicenseActivateRequest):
     """激活卡密"""
     result = activate_license(req.license_code)
     if result.get("success"):
+        parts = ["激活成功"]
+        if result.get("is_permanent"):
+            parts.append("永久会员")
+        elif result.get("days_rewarded"):
+            parts.append(f"+{result.get('days_rewarded')}天")
         return {
             "success": True,
-            "message": f"激活成功！{' +' + str(result.get('days_rewarded', 0)) + '天' if result.get('days_rewarded') else '永久会员'}",
+            "message": "！".join(parts),
             "days_rewarded": result.get("days_rewarded"),
             "is_permanent": result.get("is_permanent", False),
         }
