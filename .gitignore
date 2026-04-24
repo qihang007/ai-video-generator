@@ -122,3 +122,4 @@ cloud_cache/
 user_config.json
 license_state.json
 mtime_cache.json
+*.pt
