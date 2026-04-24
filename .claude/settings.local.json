@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"C:/Users/Administrator/AppData/Local/ShadowBot/users/90242306856304641/apps/577919e1-a085-4a2b-8403-5a8e64eeea3f/venv310/Scripts/python.exe\" \"C:/Users/Administrator/AppData/Local/ShadowBot/users/90242306856304641/apps/577919e1-a085-4a2b-8403-5a8e64eeea3f/venv310/Lib/site-packages/pyarmor/pyarmor.py\" obfuscate -O auto_video --runtime auto_video/pyarmor_runtime_000000 -r auto_video_未加密)",
+      "Bash(/j/ProgramData/miniconda3/Scripts/conda.exe run:*)",
+      "Bash(rm -rf pyarmor_runtime_000000)",
+      "Bash(mv pyarmor_runtime.pyd pyarmor_runtime.pyarmor_runtime)",
+      "Bash(mkdir -p pyarmor_runtime)",
+      "Bash(mv pyarmor_runtime.pyarmor_runtime pyarmor_runtime/_pytransform.pyd)",
+      "Bash(mv auto_video_src/* .)",
+      "Bash(rmdir auto_video_src)"
+    ]
+  }
+}
